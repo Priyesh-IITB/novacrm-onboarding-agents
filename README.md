@@ -7,6 +7,9 @@ written for the plan tier, and overdue escalation that fires on the platform's c
 The design rule: **the system never guesses.** Missing input gets a question. An unconfirmed
 plan tier gets a retry and then a person. An unreachable API gets retries and then a person.
 
+**New here? Read [CODE_WALKTHROUGH.md](CODE_WALKTHROUGH.md).** It names the one decision in each
+file worth asking about, in reading order, and points at the tests that pin each of them.
+
 ## Run it in ten seconds, no accounts
 
 ```
