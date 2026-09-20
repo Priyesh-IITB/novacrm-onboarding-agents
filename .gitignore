@@ -1,0 +1,10 @@
+.env
+*.jsonl
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+call_test_last.json
+processed_message_ids.txt
+.venv/
+venv/
