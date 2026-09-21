@@ -8,16 +8,16 @@ Prepared by Priyesh Verma for the Rocketlane Forward Deployed Engineer assignmen
 
 ## 1. What Priya told us, and what it actually means
 
-I read the discovery notes twice: once for the process, and once for the places where Priya's wording gives away where it breaks. The second read is where the design came from.
+I read the discovery notes twice: once for the process, and once for the places where her wording gives away where it breaks. The second read is where the design came from.
 
-| What she said | What it means for the design |
+| What she described | What it means for the design |
 |---|---|
-| "our AE sends an email to our CS team inbox with the customer name and the Salesforce opportunity link" | The trigger is an email, and its content is whatever the AE typed. The system has to read unstructured text and cannot assume a form. |
-| "manually create a project in Asana with our standard onboarding template, about 15 tasks across 4 phases" | The plan is stable and known. It should be encoded once and applied, not rebuilt by hand or by a model each time. |
-| "create a shared Slack channel with the customer and schedule the kickoff call" | Two more manual steps that are pure function of the same inputs. |
-| "If a task is blocked for more than 3 days, we're supposed to escalate, but honestly, that falls through the cracks a lot" | Escalation must not depend on a person remembering. It belongs in the project tool as an automation, not in the agent. |
-| "Some customers are on our Enterprise plan ... Others are on Growth ... We sometimes mix up the templates" | The plan tier is the single most consequential input, and the email does not carry it. Getting it wrong creates the wrong 30- or 14-day plan and the wrong CSM model. So it gets confirmed by a person, out loud, before anything is created. |
-| "data migration tasks were marked done but the customer's data wasn't actually verified" | "Done" and "verified" have been the same checkbox. They need to be two tasks, and the second one has to belong to the customer. |
+| The trigger is an AE email to a shared CS inbox, carrying the customer name and an opportunity link | The trigger is an email, and its content is whatever the AE typed. The system has to read unstructured text and cannot assume a form. |
+| A project is created by hand from a standard template of roughly 15 tasks across 4 phases | The plan is stable and known. It should be encoded once and applied, not rebuilt by hand or by a model each time. |
+| A shared customer Slack channel is opened and a kickoff call scheduled, both by hand | Two more manual steps that are pure function of the same inputs. |
+| A 3-day block is supposed to escalate, and she volunteered that in practice it often does not | Escalation must not depend on a person remembering. It belongs in the project tool as an automation, not in the agent. |
+| Enterprise and Growth have different plans and CSM models, and the templates get mixed up | The plan tier is the single most consequential input, and the email does not carry it. Getting it wrong creates the wrong 30- or 14-day plan and the wrong CSM model. So it gets confirmed by a person, out loud, before anything is created. |
+| Migration tasks have been marked done without the data actually being verified | "Done" and "verified" have been the same checkbox. They need to be two tasks, and the second one has to belong to the customer. |
 
 ## 2. Current workflow, as it runs today
 
